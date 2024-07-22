@@ -40,6 +40,8 @@ public class StuffNThings {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
