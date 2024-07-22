@@ -18,11 +18,32 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, StuffNThings.MODID);
 
-    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).strength(4,5)));
-    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)));
-
-    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).strength(4,5)));
-    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)));
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
+                    .strength(4,5)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_EMERALD_ORE)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
+                    .strength(4,5)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_EMERALD_ORE)
+                    .requiresCorrectToolForDrops()
+            ));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         // Register the block

@@ -7,5 +7,7 @@
 
 
   "block.stuffnthings.ruby_ore" : "Ruby Ore",
+  "block.stuffnthings.deepslate_ruby_ore" : "Deepslate Ruby Ore",
+  "block.stuffnthings.deepslate_sapphire_ore" : "Deepslate Sapphire Ore",
   "block.stuffnthings.sapphire_ore" : "Sapphire Ore"
 }
