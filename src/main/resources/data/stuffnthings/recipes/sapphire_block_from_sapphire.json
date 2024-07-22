@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "stuffnthings:sapphire"
+    }
+  },
+  "result": {
+    "item": "stuffnthings:sapphire_block"
+  }
+}

@@ -1,6 +1,7 @@
 package io.github.ddrwg613.stuffnthings;
 
 import com.mojang.logging.LogUtils;
+import io.github.ddrwg613.stuffnthings.block.ModBlocks;
 import io.github.ddrwg613.stuffnthings.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -45,6 +46,7 @@ public class StuffNThings {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);

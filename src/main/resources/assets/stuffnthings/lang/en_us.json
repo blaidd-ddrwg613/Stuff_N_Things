@@ -1,4 +1,11 @@
 {
   "item.stuffnthings.sapphire": "Sapphire",
-  "item.stuffnthings.ruby": "Ruby"
+  "item.stuffnthings.ruby": "Ruby",
+
+  "block.stuffnthings.ruby_block": "Ruby Block",
+  "block.stuffnthings.sapphire_block": "Sapphire Block",
+
+
+  "block.stuffnthings.ruby_ore" : "Ruby Ore",
+  "block.stuffnthings.sapphire_ore" : "Sapphire Ore"
 }
