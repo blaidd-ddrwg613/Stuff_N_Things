@@ -15,7 +15,8 @@ public class StickItem extends Item {
     public StickItem(Properties pProperties) {
         super(pProperties);
     }
-
+    // Currently only works on RClicking the ground
+    //TODO : Allow to interaction with LivingEntities
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         if (!pContext.getLevel().isClientSide()) {

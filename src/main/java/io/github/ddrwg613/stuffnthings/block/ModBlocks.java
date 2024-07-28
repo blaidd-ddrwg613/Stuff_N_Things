@@ -50,12 +50,16 @@ public class ModBlocks {
                     .strength(2.0f,5.0f)
                     .instrument(NoteBlockInstrument.BASS)));
 
+    public static final RegistryObject<Block> CHARCOAL_BLOCK = BLOCKS.register("charcoal_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+
+
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         // Register the block
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        //register the block item
-        registerBlockItem(name, toReturn);
-        return toReturn;
+            //register the block item
+            registerBlockItem(name, toReturn);
+            return toReturn;
     }
 
     public static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
