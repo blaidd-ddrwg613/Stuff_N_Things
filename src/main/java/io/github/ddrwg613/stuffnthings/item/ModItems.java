@@ -5,10 +5,7 @@ import io.github.ddrwg613.stuffnthings.block.ModBlocks;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,7 +39,7 @@ public class ModItems {
 
     // Fuel Block ?? must be a better way to do this....
     public static final RegistryObject<FuelBlockItem> CHARCOAL_BLOCK = ITEMS.register("charcoal_block",
-            ()-> new FuelBlockItem(ModBlocks.CHARCOAL_BLOCK.get(), new Item.Properties(),14400));
+            ()-> new FuelBlockItem(ModBlocks.CHARCOAL_BLOCK.get(), new Item.Properties(),16000));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
