@@ -1,7 +1,7 @@
 {
   "item.stuffnthings.sapphire": "Sapphire",
   "item.stuffnthings.ruby": "Ruby",
-  "item.stuffnthings.a_stick": " \"A Stick\" ",
+  "item.stuffnthings.a_stick": "\"A Stick\"",
   "item.stuffnthings.tomato": "Tomato",
   "item.stuffnthings.tiny_coal": "Tiny Coal",
 
@@ -14,5 +14,7 @@
   "block.stuffnthings.deepslate_ruby_ore" : "Deepslate Ruby Ore",
   "block.stuffnthings.deepslate_sapphire_ore" : "Deepslate Sapphire Ore",
   "block.stuffnthings.deepslate_charcoal_block" : "Block of Charcoal",
-  "block.stuffnthings.sapphire_ore" : "Sapphire Ore"
+  "block.stuffnthings.sapphire_ore" : "Sapphire Ore",
+
+  "tooltip.stuffnthings.stick_item" : "Just an ordinary stick"
 }
